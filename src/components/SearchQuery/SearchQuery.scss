@@ -1,0 +1,27 @@
+@import '../../stylesheets/colours';
+
+// https://loading.io/css/
+.Search-query__loader {
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+}
+.Search-query__loader:after {
+  animation: ldsDualRing 1.2s linear infinite;
+  border: 6px solid $color-blue-main;
+  border-color: $color-blue-main transparent $color-blue-main transparent;
+  border-radius: 50%;
+  content: ' ';
+  display: block;
+  height: 64px;
+  margin: 8px;
+  width: 64px;
+}
+@keyframes ldsDualRing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

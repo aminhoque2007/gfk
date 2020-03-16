@@ -1,0 +1,38 @@
+@import '../../stylesheets/colours';
+
+.Results-list-item {
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+
+  &:hover {
+    background-color: $color-white;
+    cursor: pointer;
+  }
+  &__img {
+    border: 1px solid $color-grey-dark;
+    margin-right: 10px;
+    width: 40px;
+  }
+  &__text--highlight {
+    color: $color-blue-main;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .Results-list-item {
+    display: block;
+
+    &__img {
+      margin: 10px;
+      width: 100px;
+    }
+
+    &__text {
+      display: block;
+      font-size: 1.2em;
+    }
+  }
+}

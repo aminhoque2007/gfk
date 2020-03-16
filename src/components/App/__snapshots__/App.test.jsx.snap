@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render a loading indicator while the App waits for a response from the Github API. 1`] = `
+<div
+  class="Search-query__loader"
+  data-testid="loading"
+/>
+`;

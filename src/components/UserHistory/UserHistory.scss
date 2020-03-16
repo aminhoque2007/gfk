@@ -1,0 +1,18 @@
+@import '../../stylesheets/colours';
+
+.User-history {
+  border-bottom: 1px solid $color-grey-dark;
+  margin-bottom: 10px;
+  overflow: scroll;
+  text-align: justify;
+
+  &__date {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .User-history {
+    overflow: visible;
+  }
+}
